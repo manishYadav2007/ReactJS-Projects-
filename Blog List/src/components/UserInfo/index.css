@@ -1,0 +1,30 @@
+
+
+
+
+.profile-img-container {
+    text-align: center;
+    margin-top: 29px;
+}
+
+.profile-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+} 
+
+
+.profile-img-container h1 {
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    font-weight: 550;
+    color: #12022f;
+    margin: 16px 0 16px 0;
+}
+
+.profile-img-container p {
+    font-size: clamp(0.8rem, 1.3vw, 1rem);
+    font-weight: 450;
+    color: #616e7c;
+
+}
