@@ -11,8 +11,10 @@ const TabItem = (props) => {
   };
 
   return (
-    <li className={`tab-item ${activeTabClass}`}  onClick={onClickTabItem}>
-      {displayText}
+    <li onClick={onClickTabItem}>
+      <button className={`tab-item-btn tab-item ${activeTabClass}`}>
+        {displayText}
+      </button>
     </li>
   );
 };

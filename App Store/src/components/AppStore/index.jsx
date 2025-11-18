@@ -304,30 +304,49 @@ class AppStore extends Component {
   };
 
   onChangeSearchAppStoreData = (event) => {
+    const searchInputValue = event.target.value;
     this.setState({
-      userEnteredSearchInput: event.target.value.trim(),
+      userEnteredSearchInput: searchInputValue,
     });
   };
 
-
+  getTabListFilterAppStoreData = () => {
+    const { initialTabIds } = this.state;
+    const filterdAppStoreData = appsList.filter((eachApp) => {
+      return eachApp.category === initialTabIds;
+    });
+    return filterdAppStoreData;
+  };
 
   render() {
     const { initialTabIds, userEnteredSearchInput } = this.state;
 
+    const getTabListFilterAppStoreData = this.getTabListFilterAppStoreData();
 
+    const filterAppStoreData = getTabListFilterAppStoreData.filter(
+      (eachAppStoreData) =>
+        eachAppStoreData.appName
+          .toLowerCase()
+          .includes(userEnteredSearchInput.toLowerCase())
+    );
 
     return (
       <div className="app-store-bg">
         <div className="app-store-section">
           <h1 className="title">App Store</h1>
           <form>
-            <input
-              placeholder="Search your app here..."
-              type="search"
-              className="search-app-input"
-              value={userEnteredSearchInput}
-              onChange={this.onChangeSearchAppStoreData}
-            />
+            <div className="input-container">
+              <input
+                placeholder="Search your app here..."
+                type="search"
+                className="search-app-input"
+                value={userEnteredSearchInput}
+                onChange={this.onChangeSearchAppStoreData}
+              />
+
+              <img src="https://assets.ccbp.in/frontend/react-js/app-store/app-store-search-img.png " className="search-icon" alt="search icon" />
+
+            </div>
           </form>
           <div className="tab-item-container">
             <ul className="tab-item-list">
@@ -344,7 +363,7 @@ class AppStore extends Component {
 
           <div className="app-store-logo-wrapper">
             <ul className="app-store-list-item">
-              {appsList.map((eachAppStoreData) => (
+              {filterAppStoreData.map((eachAppStoreData) => (
                 <AppItem
                   eachAppStoreData={eachAppStoreData}
                   key={eachAppStoreData.appId}

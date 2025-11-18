@@ -10,9 +10,31 @@
 }
 
 
-.active-tab  {
+button.active-tab  {
   color: #0655ff;
   border-bottom: 2.5px solid #0655ff;
+
+}
+
+ul .tab-item {
+  font-size: clamp(1rem, 1.7vw, 1.5rem);
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+ul .tab-item:hover {
+  transform: scale(1.1);
+}
+
+.tab-item-list {
+  display: flex;
+  gap: 45px;
+  margin-top: 20px;
 }
 
 
+.tab-item-btn  {
+  background-color: transparent;
+  border: none;
+}
