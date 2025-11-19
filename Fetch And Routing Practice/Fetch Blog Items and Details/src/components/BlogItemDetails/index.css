@@ -1,0 +1,45 @@
+
+
+
+.blog-detail-container  {
+    display: flex;
+    margin: 15px 0 19px 0;
+    justify-content: center;
+}
+
+
+.blog-title  {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+
+.blog-details-author-container  {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.blog-card  {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-description  {
+    padding: 10px;
+    font-size: clamp(1rem, 1vw, 1.5rem);
+}
+
+
+.loader  {
+    display: flex;
+    justify-content: center;
+}
