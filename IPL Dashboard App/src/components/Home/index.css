@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+
+
+
+.bg  {
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+.ipl-logo-container  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 15px 0;
+
+}
+
+.ipl-logo-container .logo {
+  width: 60px;
+  height: 90px;
+}
+
+.ipl-logo-container .ipl-heading  {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 650;
+  font-family: Bree Serif;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.ipl-dashboard-container  {
+  padding-top: 50px;
+}
+
+
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  align-items: center;
+} 
+
+.ipl-dashboard-card-list  {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loader-container  {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
