@@ -1,10 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+.recent-match-card-list {
+  background-color: #0f172a;
+  width: 100%;
+  max-width: 450px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+}
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "inter", sans-serif;
+.recent-match-image {
+  height: 120px;
+  width: 120px;
+}
+
+.competing-team {
+  font-size: clamp(1rem, 1.5rem, 2rem);
+  color: #ffffff;
+  font-weight: 560;
+  margin: 15px 0 15px 0;
+}
+
+.match-result {
+  font-size: clamp(1rem, 1rem, 2rem);
+  margin: 17px 0 19px 0;
+}
+
+.match-status {
+  font-size: clamp(1rem, 1.8vw, 2rem);
+  margin: 18px 0 17px 0;
+}
+
+.won {
+  color: #18ed66;
+}
+
+.lost {
+  color: #e31a1a;
 }

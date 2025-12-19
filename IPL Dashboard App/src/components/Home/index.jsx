@@ -6,7 +6,7 @@ import TeamCard from "../TeamCard";
 const Home = () => {
   const [teamsData, setIplDashboardData] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
