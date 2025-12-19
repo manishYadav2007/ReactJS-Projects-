@@ -1,0 +1,44 @@
+.home-page-bg {
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: clamp(1rem, 2.7vw, 3rem);
+  color: #02060e;
+  font-family: 'poppins';
+
+}
+
+.text-description {
+  font-size: clamp(0.8rem, 1.4vw, 2.4rem);
+  margin: 15px 0 18px 0;
+  line-height: 1.4;
+}
+
+.shop-now-btn {
+  height: 45px;
+  width: 120px;
+  border: none;
+  background-color: #0840a8;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.home-page-img {
+    max-width: 800px;
+}
