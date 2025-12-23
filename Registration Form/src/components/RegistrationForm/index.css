@@ -51,7 +51,7 @@ input::placeholder {
   color: #8f8f8f;
 }
 input:focus {
-  border: 1.5px solid #1170ff;
+  border: 1.5px solid #ff0b37;
 }
 
 .button-container {
@@ -80,4 +80,46 @@ input:focus {
   font-weight: 500;
   color: #ff0000;
   margin: 10px 0 10px 0;
+}
+
+.error-bg {
+  border: 2px solid #ff0b37;
+  background-color: #fef2f4;
+}
+
+
+.registration-success-wrapper  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.success-img  {
+  height: 120px;
+  width: 100%;
+  max-width: 120px;
+}
+
+.success-heading  {
+  font-size: clamp(1.5rem, 1.7vw, 2rem);
+  font-weight: 550;
+  margin: 10px 0 10px 0;
+}
+
+
+.submit-another-response-btn  {
+  height: 40px;
+  width: 100%;
+  color: #ffffff;
+  border-radius: 8px;
+  background-color: #ea580c;
+  border: none;
+  font-weight: 550;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.submit-another-response-btn:hover {
+  background-color: #c4420c;
+  transform: scale(1.1);
 }
