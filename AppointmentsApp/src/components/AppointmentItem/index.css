@@ -1,0 +1,36 @@
+.appointments-lists {
+  border: 1px solid #b5b7c4;
+  border-radius: 18px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.list-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.appointments-title {
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  color: #171f46;
+  font-weight: 600;
+}
+
+.star-img {
+  height: 25px;
+  width: 25px;
+}
+
+.date {
+  color: #b5b7c4;
+  font-size: clamp(0.9rem, 0.6vw, 1.4rem);
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.bookmark-toggle-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
