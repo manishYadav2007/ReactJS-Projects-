@@ -1,0 +1,128 @@
+.bg {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.navbar {
+  height: 70px;
+  max-width: 100%;
+  background-color: #3367d6;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-wrapper {
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-icon-container {
+  background-color: #2850a7;
+  padding: 7px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  cursor: pointer;
+}
+
+.search-input {
+  height: 40px;
+  width: 400px;
+  background-color: #2850a7;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 10px;
+  font-weight: 490;
+  transition: outline 0.3s ease-in;
+}
+
+.search-input::placeholder {
+  color: #ffffff;
+}
+
+.search-input:focus {
+  outline: 1px solid #ffffff;
+}
+
+.history-container  {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-history-container {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px  rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 15px;
+}
+
+
+.time  {
+    font-size: clamp(0.8rem, 0.9vw, 1rem);
+    font-weight: 390;
+}
+
+.logo-img  {
+    height: 30px;
+    width: 30px;
+}
+
+.logo-and-title-container  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title  {
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-weight: 400;
+
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 8px;
+}
+
+.history-list-item  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 10px;
+}
+
+
+.domain-name  {
+    font-weight: 550;
+}
+
+
+.list-delete-btn  {
+  background-color: transparent;
+  border: none;
+}
+
+.delete-icon  {
+    cursor: pointer;
+    transition: transform 0.3s ease-in;
+}
+
+.delete-icon:hover  {
+    transform: scale(1.3);
+}
