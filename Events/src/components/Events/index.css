@@ -1,0 +1,33 @@
+.bg-container {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+
+.events-wrapper {
+  width: 55%;
+  float: left;
+  min-height: 100vh;
+  background-color: #323f4b;
+}
+.active-events-registration-details {
+  min-height: 100vh;
+  width: 45%;
+  float: right;
+  background-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.events-heading {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  color: #ffffff;
+  padding: 16px;
+}

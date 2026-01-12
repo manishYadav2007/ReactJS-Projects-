@@ -1,0 +1,23 @@
+.event-item-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.event-item-name {
+  font-size: clamp(16px, 2.5vw, 20px);
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.events-location {
+  font-size: clamp(14px, 2vw, 16px);
+  color: #cbd5e1;
+}
+
+.click-img {
+  background-color: transparent;
+  border: none;
+}
