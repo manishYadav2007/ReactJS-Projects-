@@ -1,24 +1,16 @@
-
-
-
-
-
-.bg  {
+.bg {
   min-height: 100vh;
   max-width: 100%;
-  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+  background-image: url("https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png");
   background-size: cover;
   background-position: center center;
 }
 
-
-
-.ipl-logo-container  {
+.ipl-logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 15px 0 15px 0;
-
 }
 
 .ipl-logo-container .logo {
@@ -26,7 +18,7 @@
   height: 90px;
 }
 
-.ipl-logo-container .ipl-heading  {
+.ipl-logo-container .ipl-heading {
   font-size: clamp(1rem, 2vw, 2rem);
   font-weight: 650;
   font-family: Bree Serif;
@@ -34,11 +26,9 @@
   margin-left: 10px;
 }
 
-.ipl-dashboard-container  {
+.ipl-dashboard-container {
   padding-top: 50px;
 }
-
-
 
 ul {
   list-style: none;
@@ -48,15 +38,15 @@ ul {
   max-width: 1200px;
   gap: 20px;
   align-items: center;
-} 
+}
 
-.ipl-dashboard-card-list  {
+.ipl-dashboard-card-list {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
 
-.loader-container  {
+.loader-container {
   display: flex;
   justify-content: center;
   padding-top: 100px;
