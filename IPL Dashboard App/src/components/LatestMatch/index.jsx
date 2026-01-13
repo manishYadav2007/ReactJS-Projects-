@@ -3,13 +3,11 @@ import "./index.css";
 const LatestMatch = (props) => {
   const { latestMatchDetails } = props;
   const {
-    id,
     competingTeam,
     competingTeamLogo,
     date,
     firstInnings,
     manOfTheMatch,
-    matchStatus,
     result,
     secondInnings,
     umpires,
