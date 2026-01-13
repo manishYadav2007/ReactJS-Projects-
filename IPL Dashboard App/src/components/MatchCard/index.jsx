@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.css";
 
 const MatchCard = (props) => {
@@ -6,14 +5,8 @@ const MatchCard = (props) => {
   const {
     competingTeam,
     competingTeamLogo,
-    date,
-    firstInnings,
-    manOfTheMatch,
     matchStatus,
     result,
-    secondInnings,
-    umpires,
-    venue,
   } = matchCardDetails;
 
   const matchStatusClass = matchStatus === "Won" ? "won" : "lost";
