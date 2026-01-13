@@ -6,8 +6,8 @@
   padding: 24px;
   border-radius: 16px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   color: #ffffff;
   align-items: center;
 }
