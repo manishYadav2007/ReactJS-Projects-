@@ -1,9 +1,19 @@
-.event-item-img {
+.event-item-normal {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: border 0.3s ease;
+}
+
+img.active-event-item {
+  border: 3px solid #2dd4bf;
   width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 12px;
 }
+
 
 .event-item-name {
   font-size: clamp(16px, 2.5vw, 20px);
