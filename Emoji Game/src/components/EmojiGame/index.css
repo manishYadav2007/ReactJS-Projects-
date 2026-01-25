@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* App Container */
+
+/* Emoji Game Body */
+.emoji-game-body {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.emojis-list-container {
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  place-content: center;
+}
+
+/* Emoji Card Styles */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .logo-text {
+    font-size: 18px;
+  }
+  .score-text {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .emoji-item {
+    width: 100px;
+    height: 100px;
+  }
+}

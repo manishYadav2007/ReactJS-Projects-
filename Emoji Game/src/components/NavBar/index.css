@@ -1,0 +1,37 @@
+.navbar-container {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.emoji-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.logo-text {
+  color: #fdfdfd;
+  font-size: 24px;
+  font-weight: 650;
+  margin: 0;
+}
+.scores-container {
+  display: flex;
+}
+.score-text {
+  color: #fdfdfd;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 20px;
+}
