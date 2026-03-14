@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 
 import "./index.css";
 
@@ -86,14 +86,14 @@ const BrowserHistory = () => {
   };
 
   const filterHistoryData = initialData.filter((eachData) =>
-    eachData.title.toLocaleLowerCase().includes(input.toLocaleLowerCase())
+    eachData.title.toLocaleLowerCase().includes(input.toLocaleLowerCase()),
   );
 
-  // const onClickDeleteListItem = () => {
-  //   const deleteListItem = initialData.filter(eachData => eachData.id );
-  //   setInitialData(deleteListItem);
-  // };
-
+  const onClickDeleteListItem = (id) => {
+    setInitialData((prevData) =>
+      prevData.filter((eachData) => eachData.id !== id),
+    );
+  };
 
   return (
     <div className="bg">
@@ -129,10 +129,14 @@ const BrowserHistory = () => {
       </nav>
 
       <div className="history-container">
-        <ul className="search-history-container">
-          {filterHistoryData.map((eachItem) => {
-            return (
-              <li>
+        {filterHistoryData.length === 0 ? (
+          <div className="no-history-container">
+            <p className="no-history">There is no history to show</p>
+          </div>
+        ) : (
+          <ul className="search-history-container">
+            {filterHistoryData.map((eachItem) => (
+              <li key={eachItem.id}>
                 <p className="time">{eachItem.timeAccessed}</p>
                 <div className="history-list-item">
                   <div className="logo-and-title-container">
@@ -149,7 +153,7 @@ const BrowserHistory = () => {
                   <div className="history-delete-icon-container">
                     <button
                       className="list-delete-btn"
-                      // onClick={onClickDeleteListItem}
+                      onClick={() => onClickDeleteListItem(eachItem.id)}
                     >
                       <img
                         src="https://assets.ccbp.in/frontend/react-js/delete-img.png"
@@ -160,9 +164,9 @@ const BrowserHistory = () => {
                   </div>
                 </div>
               </li>
-            );
-          })}
-        </ul>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
