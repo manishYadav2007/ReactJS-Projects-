@@ -1,0 +1,41 @@
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.status {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 600;
+}
+
+.notication-content {
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+}
+
+.success-icon {
+  color: #3eca73;
+}
+
+.error-icon {
+  color: #f50c38;
+}
+
+.warning-icon {
+  color: #f9b800;
+}
+
+.info-icon {
+  color: #2e81e0;
+}
+
+
+.heading {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 650;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
